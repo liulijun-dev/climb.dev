@@ -1,0 +1,7 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Go Beyond Oneself'
+theme = 'herring-cove'
+
+[params]
+  AuthorName = "Lijun Liu"
