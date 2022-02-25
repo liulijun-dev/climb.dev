@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://amazing-volhard-946549.netlify.app/'
 languageCode = 'en-us'
 title = 'Go Beyond Oneself'
 theme = 'herring-cove'
