@@ -1,34 +1,97 @@
 baseURL = 'https://amazing-volhard-946549.netlify.app/'
 languageCode = 'zh-cn'
 title = 'Go Beyond Oneself'
-theme = 'coder'
-
+theme = 'hugo-coder'
+pygmentsStyle = "bw"
 [params] # theme parameters
-    author = "John Doe" # author's name
-    info = "Full Stack DevOps and Magician" # author's job title or info
+    author = "Lijun Liu" # author's name
+    info = "Full Stack Developer" # author's job title or info
     description = "John Doe's personal website" # site description
     keywords = "blog,developer,personal" # site keywords
+
+    custom_css = ["/css/main.css"]
     
 # Social links
 [[params.social]]
+    name = "WeChat"
+    weight = 3
+    url = "https://www.linkedin.com/in/johndoe/"
+[[params.social]]
     name = "Github"
+    icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/johndoe/"
+    url = "https://github.com/liulijun-dev"
 [[params.social]]
-    name = "Twitter"
+    name = "CSDN"
     weight = 2
-    url = "https://twitter.com/johndoe/"
+    url = "https://blog.csdn.net/l460133921"
 [[params.social]]
-    name = "LinkedIn"
+    name = "知乎"
     weight = 3
     url = "https://www.linkedin.com/in/johndoe/"
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "Learning"
+                weight = 1
+                url  = "/learning/"
+            [[languages.en.menu.main]]
+                name = "Technology"
+                weight = 2
+                url  = "/topic/"
+            [[languages.en.menu.main]]
+                name = "Team Manager"
+                weight = 3
+                url  = "/team/"
+            [[languages.en.menu.main]]
+                name = "Project"
+                weight = 4
+                url  = "/project/"
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 5
+                url = "/about/"
+
+    [languages.zh-cn]
+        languagename = "Chinese"
+        title = "超越自我"
+
+        [languages.zh-cn.params]
+            author = "Lijun Liu"
+            info1 = "📚"
+            info1Tooltip = "终身学习/认知杠杆"
+            info2 = "👨‍💻"
+            info2Tooltip = "全栈技术/时间杠杆"
+            info3 = "💴"
+            info3Tooltip = "投资理财/财务杠杆"
+            description = "通过学习（GTD、时间管理、知识管理、写作、财务管理）、技术创造（前端、后端、移动端、DevOps）、投资（指数投资、基金、股票、债券）、网赚项目（SEO、Affiliate、Media Buy、Niche、社交媒体）来建立被动收入"
+            keywords = "自我提升、时间管理、GTD、写作、摄影、笔记管理、知识管理、财务管理、全栈开发、指数投资、基金、股票、债券、SEO、Affiliate、Media Buy、Niche、社交媒体、被动收入、网赚"
+            # footercontent = "self/dev/money"
+
+        [languages.zh-cn.menu]
+            [[languages.zh-cn.menu.main]]
+                name = "学习"
+                weight = 1
+                url  = "/learning/"
+            [[languages.zh-cn.menu.main]]
+                name = "技术专题"
+                weight = 2
+                url  = "/topic/"
+            [[languages.zh-cn.menu.main]]
+                name = "团队管理"
+                weight = 3
+                url  = "/team/"
+            [[languages.zh-cn.menu.main]]
+                name = "个人项目"
+                weight = 4
+                url  = "/project/"
+            [[languages.zh-cn.menu.main]]
+                name = "关于"
+                weight = 5
+                url = "/about/"
+
